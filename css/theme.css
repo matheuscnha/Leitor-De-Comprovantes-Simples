@@ -1,0 +1,163 @@
+/* Acabamento visual retrofuturista. */
+/* Identidade retrofuturista: papel impresso, tinta escura e sinal luminoso. */
+.eyebrow,
+.summary-period {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.brand-copy h1,
+.comprovante-titulo,
+.comprovante-subtitulo,
+.form-edicao h3,
+.form-edicao h4 {
+  font-family: Fraunces, Georgia, serif;
+}
+
+.brand-copy h1 {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.summary-icon {
+  border-color: rgba(40, 123, 131, 0.26);
+  background: rgba(124, 230, 220, 0.24);
+  color: #1d5260;
+}
+
+.summary-period {
+  color: #287b83;
+}
+
+.total-gasto {
+  font-family: "IBM Plex Mono", monospace;
+  color: #1d263f;
+  font-weight: 600;
+  letter-spacing: -0.07em;
+}
+
+.summary-label,
+#quantidade-comprovantes {
+  color: #3f4a60;
+}
+
+.summary-decoration,
+.summary-decoration::before,
+.summary-decoration::after {
+  border-color: rgba(40, 123, 131, 0.28);
+}
+
+.upload-card,
+.comprovante-card,
+.form-edicao {
+  border-color: var(--line);
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(38, 38, 61, 0.075);
+}
+
+.upload-card:hover {
+  border-color: #66bcb6;
+  box-shadow: 0 20px 42px rgba(38, 38, 61, 0.13);
+}
+
+.upload-card.leitura-em-andamento {
+  cursor: progress;
+  opacity: 0.72;
+}
+
+.upload-content {
+  border-color: #a9c6c1;
+  border-radius: 10px;
+  
+}
+
+.upload-icon {
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.comprovante-produtos li {
+  border-radius: 7px;
+  background: #edf3f5;
+  color: #343a53;
+}
+
+.comprovante-produtos li.comprovante-desconto {
+  background: #def1ed;
+  color: #24676d;
+}
+
+.comprovante-titulo,
+.comprovante-total,
+.app-footer span:first-child {
+  color: var(--accent-dark);
+}
+
+.comprovante-subtitulo {
+  color: var(--ink);
+}
+
+.comprovante-aviso,
+.aviso-formulario {
+  border-color: #e8d3a8;
+  background: #fbf0d8;
+  color: #6c4c20;
+}
+
+.campo-edicao {
+  color: #52576a;
+}
+
+.campo-edicao input,
+.campo-edicao select {
+  border-color: #d7cbb7;
+  border-radius: 7px;
+  background: #fffdf8;
+}
+
+.linha-edicao {
+  border-color: var(--line);
+  border-radius: 9px;
+  background: #fbf6eb;
+}
+
+.linha-edicao.produto-suspeito {
+  border-color: #d1ac60;
+  background: #fff8e9;
+}
+
+.marcador-repeticao {
+  grid-column: 1 / -1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #fbf0d8;
+  color: #6c4c20;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.app-footer {
+  color: #77717b;
+}
+
+.eyebrow {
+  color: var(--signal);
+}
+
+#menu-button button {
+  border-color: #c5d6d2;
+  border-radius: 8px;
+  background: #fbfaf4;
+}
+
+#menu-button button:hover {
+  border-color: var(--signal);
+  background: #e8f4f2;
+}
+
+button:focus-visible,
+input:focus-visible,
+#file-container:focus-within .upload-content {
+  outline-color: rgba(40, 123, 131, 0.72);
+}
+

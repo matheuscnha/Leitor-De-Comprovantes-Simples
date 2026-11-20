@@ -1,0 +1,121 @@
+/* Ajustes responsivos e redução de movimento. */
+@media (max-width: 700px) {
+  .app-shell {
+    width: min(100% - 32px, 540px);
+    padding-top: 25px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .brand-lockup {
+    gap: 11px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+  }
+
+  .eyebrow {
+    font-size: 0.59rem;
+  }
+
+  .topo {
+    max-width: 260px;
+    font-size: 0.84rem;
+  }
+
+  #menu-button button {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #menu-button button span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    margin-bottom: 24px;
+  }
+
+  .summary-card,
+  .upload-card {
+    min-height: 205px;
+  }
+
+  .summary-card {
+    padding: 21px 23px;
+  }
+
+  .upload-content {
+    padding: 16px;
+  }
+
+  .comprovante-card,
+  .form-edicao {
+    padding: 21px 19px;
+  }
+
+  .app-footer {
+    flex-direction: column;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .app-shell {
+    width: min(100% - 24px, 540px);
+  }
+
+  .brand-copy h1 {
+    max-width: 18rem;
+    font-size: 1.38rem;
+  }
+
+  .eyebrow {
+    max-width: 13rem;
+    line-height: 1.5;
+  }
+
+  .brand-copy .topo {
+    max-width: 190px;
+    font-size: 0.78rem;
+  }
+
+  .linha-edicao {
+    grid-template-columns: 1fr;
+  }
+
+  .comprovante-acoes button,
+  .linha-edicao > button,
+  .form-edicao > [data-acao^="adicionar-"] {
+    min-height: 44px;
+  }
+
+  .historico-cabecalho {
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

@@ -1,0 +1,137 @@
+/* Formulário de revisão, validação e acessibilidade. */
+.form-edicao h4 {
+  margin: 0 0 12px;
+  font-family: Fraunces, Georgia, serif;
+}
+
+.aviso-formulario,
+.erro-formulario {
+  margin: 10px 0;
+  padding: 11px 13px;
+  border-radius: 10px;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.aviso-formulario {
+  border: 1px solid #f0dfba;
+  background: #fff7e7;
+  color: #76520a;
+}
+
+.erro-formulario {
+  border: 1px solid #f0c9c5;
+  background: #fff0ee;
+  color: var(--danger);
+}
+
+.form-edicao h4 {
+  margin-top: 22px;
+}
+
+.campo-edicao {
+  display: block;
+  margin-top: 12px;
+  color: #52635c;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.campo-edicao input,
+.campo-edicao select {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  margin-top: 6px;
+  padding: 9px 11px;
+  border: 1px solid #dce5dd;
+  border-radius: 9px;
+  background: white;
+  color: var(--ink);
+}
+
+.campo-edicao input[aria-invalid="true"],
+.campo-edicao select[aria-invalid="true"] {
+  border-color: #b74438;
+  background: #fff2ef;
+}
+
+.imagem-comprovante-revisao {
+  margin: 16px 0 20px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f4f0e7;
+}
+
+.imagem-comprovante-revisao figcaption {
+  margin-bottom: 10px;
+  color: #52576a;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.imagem-comprovante-revisao img {
+  display: block;
+  width: 100%;
+  max-height: 480px;
+  border-radius: 6px;
+  background: white;
+  object-fit: contain;
+}
+
+.linha-edicao {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px 12px;
+  margin: 11px 0;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fbfcf9;
+}
+
+.numero-produto {
+  grid-column: 1 / -1;
+  color: var(--accent-dark);
+  font-family: Fraunces, Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.linha-edicao > button {
+  justify-self: start;
+}
+
+.form-edicao > [data-acao^="adicionar-"] {
+  margin-top: 3px;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px 2px 0;
+  color: #87948e;
+  font-size: 0.74rem;
+}
+
+.app-footer span:first-child {
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  cursor: default;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

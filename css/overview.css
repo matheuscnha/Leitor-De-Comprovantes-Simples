@@ -1,0 +1,105 @@
+/* Resumo e cartão de totais. */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.summary-card,
+.upload-card {
+  position: relative;
+  min-height: 228px;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.summary-card {
+  padding: 24px 27px;
+  border: 1px solid rgba(37, 43, 73, 0.16);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 89% 100%, rgba(72, 195, 197, 0.12), transparent 10rem),
+    linear-gradient(145deg, rgba(255, 250, 240, 0.16), rgba(228, 242, 239, 0.1));
+  color: white;
+  -webkit-backdrop-filter: blur(30px) saturate(160%);
+  backdrop-filter: blur(30px) saturate(160%);
+  box-shadow:
+    0 16px 34px rgba(38, 38, 61, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.summary-topline {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-icon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f4fff8;
+}
+
+.summary-period {
+  color: rgba(241, 255, 246, 0.72);
+}
+
+.summary-label {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0 4px;
+  color: rgba(244, 255, 247, 0.76);
+  font-size: 0.88rem;
+}
+
+.total-gasto {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(2.1rem, 4vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+}
+
+#quantidade-comprovantes {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0 0;
+  color: rgba(244, 255, 247, 0.76);
+  font-size: 0.84rem;
+}
+
+.summary-decoration {
+  position: absolute;
+  right: -50px;
+  bottom: -105px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.summary-decoration::before,
+.summary-decoration::after {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  content: "";
+}
+
+.summary-decoration::before {
+  inset: 22px;
+}
+
+.summary-decoration::after {
+  inset: 46px;
+}
+

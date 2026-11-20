@@ -1,0 +1,10 @@
+/* Entrada dos estilos: mantenha a ordem para preservar a cascata. */
+@import url("./css/foundation-layout.css");
+@import url("./css/overview.css");
+@import url("./css/upload.css");
+@import url("./css/history.css");
+@import url("./css/review-form.css");
+@import url("./css/responsive.css");
+@import url("./css/theme.css");
+@import url("./css/review-status.css");
+@import url("./css/dialogs.css");

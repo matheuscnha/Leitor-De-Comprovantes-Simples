@@ -1,0 +1,203 @@
+/* Avisos, conferência por produto e estado da revisão. */
+.estado-revisao {
+  margin-top: 14px;
+  padding: 13px 14px;
+  border: 1px solid #e8d3a8;
+  border-radius: 9px;
+  background: #fbf0d8;
+  color: #6c4c20;
+  font-size: 0.84rem;
+}
+
+.estado-revisao h3 {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.lista-avisos-revisao {
+  display: grid;
+  gap: 5px;
+  margin: 9px 0 0;
+  padding-left: 19px;
+  line-height: 1.45;
+}
+
+.estado-revisado-com-divergencia {
+  border-color: #bdd8d1;
+  background: #eaf4ef;
+  color: #365c52;
+}
+
+.botao-marcar-revisado {
+  min-height: 36px;
+  margin-top: 12px;
+  padding: 0 12px;
+  border: 1px solid #d4a953;
+  border-radius: 7px;
+  background: #fff8e8;
+  color: #604716;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao-marcar-revisado:hover {
+  background: #ffefc9;
+}
+
+.storage-status {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border: 1px solid #e6b9b2;
+  border-radius: 9px;
+  background: #fff0ee;
+  color: #8f342b;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.avisos-origem {
+  margin: 14px 0;
+  padding: 13px;
+  border: 1px solid #e8d3a8;
+  border-radius: 10px;
+  background: #fff8e9;
+}
+
+.avisos-origem h4 {
+  margin: 0 0 5px;
+  color: #604716;
+}
+
+.avisos-origem > p {
+  margin: 0 0 10px;
+  color: #6c4c20;
+  font-size: 0.83rem;
+  line-height: 1.45;
+}
+
+.aviso-origem {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(108, 76, 32, 0.16);
+  color: #604716;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.aviso-origem input {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  margin: 1px 0 0;
+  accent-color: var(--signal);
+}
+
+.historico-avisos-resolvidos {
+  margin-top: 10px;
+  font-size: 0.83rem;
+}
+
+.historico-avisos-resolvidos summary {
+  color: #365c52;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.revisao-comparacao {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: 20px;
+}
+
+.revisao-campos {
+  min-width: 0;
+}
+
+.imagem-comprovante-revisao {
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 32px);
+  margin: 0;
+  overflow: auto;
+}
+
+.imagem-comprovante-revisao img {
+  max-height: calc(100vh - 100px);
+}
+
+.confirmacao-produto {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px 10px;
+  border-radius: 7px;
+  background: #e4f2ef;
+  color: #214f55;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.confirmacao-produto input {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  margin: 1px 0 0;
+  accent-color: var(--signal);
+}
+
+.confirmacao-produto input[aria-invalid="true"] {
+  outline: 2px solid #b74438;
+  outline-offset: 2px;
+}
+
+.status-conferencia-edicao {
+  grid-column: 1 / -1;
+  color: #465568;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.status-conferencia-item {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.sugestao-original-item {
+  margin-top: 6px;
+  font-size: 0.76rem;
+}
+
+.sugestao-original-item summary {
+  color: #52635c;
+  cursor: pointer;
+}
+
+.sugestao-original-item span {
+  display: block;
+  margin-top: 4px;
+  color: #60677a;
+  font-size: 0.74rem;
+}
+
+.produto-conferido {
+  color: #24676d;
+}
+
+.produto-alterado {
+  color: #8a5217;
+}
+
+.produto-sem-conferencia {
+  color: #60677a;
+}
+
