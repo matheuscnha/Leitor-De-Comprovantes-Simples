@@ -45,6 +45,7 @@ Depois, acesse [http://localhost:8000](http://localhost:8000).
 Abra a pasta no VS Code e inicie o projeto com a extensão Live Server.
 
 A leitura por IA precisa de conexão com a internet e depende da disponibilidade do SDK e do serviço externo.
+Na primeira leitura, o Puter pode solicitar que a pessoa entre ou autorize o uso dos recursos de IA. Esse acesso é exigido pelo serviço externo; o projeto não tem sistema próprio de cadastro ou login.
 
 ## Privacidade e armazenamento
 
